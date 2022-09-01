@@ -1,6 +1,6 @@
 import re
 
-def myAtoi(s: str):
+def myAtoi(s: str) -> int:
     pattern = r"[+-]*\d+"
     if len(s) == 0:
         return 0
@@ -36,5 +36,5 @@ def myAtoi(s: str):
             except ValueError:
                 return 0
             else:
-                return int(num)
-    return int(num)
+                return num
+    return num
